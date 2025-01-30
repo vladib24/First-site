@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="headline">Introduction</div>
+      <div class="row">
+        <div class="maintext">
+          Bicycles have been a significant part of transportation for over a
+          century, offering a sustainable, cost-effective, and healthy
+          alternative to motor vehicles. From daily commuting to recreational
+          activities, bicycles have become integral to modern life, promoting
+          fitness, reducing pollution, and enhancing mobility.
+        </div>
+        <div class="menu">
+          <button
+            class="link"
+            id="toBasicFacts"
+            type="button"
+            onclick="testClick('basicfacts')"
+          >
+            Basic Facts
+          </button>
+          <br />
+          <button
+            class="link"
+            id="toEtymology"
+            type="button"
+            onclick="testClick('ethymology')"
+          >
+            Ethymology
+          </button>
+          <br />
+          <button
+            class="link"
+            id="tohistory"
+            type="button"
+            onclick="testClick('history')"
+          >
+            History
+          </button>
+          <br />
+          <button
+            class="link"
+            id="tohistory"
+            type="button"
+            onclick="testClick('uses')"
+          >
+            Uses
+          </button>
+          <br />
+        </button>
+       
+        <button
+          class="link"
+          id="toSquare"
+          type="button"
+          onclick="testClick('Square')"
+         
+        >
+        Circumference
+        </div>
+      </div>
+      <br />
+      <div class="imageboxbike">
+        <img src="Bike.jpg" width="100%" />
+      </div>
+    </div>
+
+    <script>
+      function testClick(destination) {
+        console.log("destination: ", destination);
+        window.location = destination + ".html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <body>
+        <div class="headrow">
+          <div class="headline">Calculate your wheel-circumference</div>
+          <div>
+            <button class="return" id="toStart" type="button" onclick="testClick()">
+              Return
+            </button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="result" id="result"> </div>
+        <br>
+        <br>
+        <br>
+        <div class="inputsquare">
+            <div class="maintext">Enter wheel diameter: </div> 
+            <input class="number" id="calcinput" type="text">
+        </div>
+        <br>
+       <div class="inputsquare"> 
+        <button class="calculator" onclick="calc()"> calculate </div>
+       <div class="maintext" id=result> </div>
+    <script>
+      function testClick() {
+        window.location = "introduction.html";
+      }
+      
+      function calc() {
+        let resulcircumference = document.getElementById('result')
+        let diameter = document.getElementById("calcinput").value;
+        console.log(isNaN(diameter));
+        if(isNaN(diameter)) {
+          resulcircumference.innerHTML="Enter a number!"
+        } else{
+        let circumference = Math.PI*diameter
+        console.log(diameter);
+        console.log(circumference)
+        resulcircumference.innerHTML = circumference;
+        }
+      }
+    </script>
+  </body>
+</html>
